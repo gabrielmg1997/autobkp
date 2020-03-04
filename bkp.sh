@@ -1,9 +1,9 @@
 #!/bin/bash
 #-------------------------------------------------
 #Atualizando os Repo e procurando atualizações
-sudo apt update && sudo apt dist-upgrade && sudo apt autoremove && sudo apt autoclean
-sudo add-apt-repository ppa:papirus/papirus
-sudo apt-get update
+sudo apt update && sudo apt dist-upgrade && sudo apt autoremove && sudo apt autoclean -y
+sudo add-apt-repository ppa:papirus/papirus -y 
+sudo apt-get update -y 
 #-------------------------------------------------
 #Downloads 
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb
@@ -21,6 +21,9 @@ sudo apt install flameshot -y
 sudo apt install neofetch -y
 sudo apt install kvantum -y 
 sudo apt install tilda -y
+sudo apt install mousepad -y
+sudo apt install gnome-mvp -y
+sudo apt install audacious -y
 sudo apt install cmake extra-cmake-modules qtdeclarative5-dev libqt5x11extras5-dev libkf5iconthemes-dev libkf5plasma-dev libkf5windowsystem-dev libkf5declarative-dev libkf5xmlgui-dev libkf5activities-dev build-essential libxcb-util-dev libkf5wayland-dev git gettext libkf5archive-dev libkf5notifications-dev libxcb-util0-dev libsm-dev libkf5crash-dev libkf5newstuff-dev -y
 
 #-------------------------------------------------
