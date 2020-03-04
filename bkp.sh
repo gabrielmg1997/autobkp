@@ -1,7 +1,7 @@
 #!/bin/bash
 #-------------------------------------------------
 #Atualizando os Repo e procurando atualizações
-sudo apt update && sudo apt dist-upgrade && sudo apt autoremove && sudo apt autoclean -y
+sudo apt update -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 sudo add-apt-repository ppa:papirus/papirus -y 
 sudo apt-get update -y 
 #-------------------------------------------------
