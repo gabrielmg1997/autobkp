@@ -2,9 +2,9 @@
 #-------------------------------------------------
 #Atualizando os Repo e procurando atualizações
 sudo apt --fix-broken install -y
-sudo apt remove firefox
-sudo apt remove spectacle
-sudo apt remove kcalc
+sudo apt remove firefox -y
+sudo apt remove spectacle -y
+sudo apt remove kcalc -y
 sudo apt update -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 sudo add-apt-repository ppa:papirus/papirus -y 
 sudo apt-get update -y 
@@ -34,11 +34,11 @@ sudo apt --fix-broken install -y
 sudo apt install mousepad -y
 sudo apt --fix-broken install
 sudo apt install gnome-mvp -y
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 sudo apt install audacious -y
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 sudo apt install cmake extra-cmake-modules qtdeclarative5-dev libqt5x11extras5-dev libkf5iconthemes-dev libkf5plasma-dev libkf5windowsystem-dev libkf5declarative-dev libkf5xmlgui-dev libkf5activities-dev build-essential libxcb-util-dev libkf5wayland-dev git gettext libkf5archive-dev libkf5notifications-dev libxcb-util0-dev libsm-dev libkf5crash-dev libkf5newstuff-dev -y
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 #-------------------------------------------------
 #opera
 dpkg -i opera.deb
@@ -52,7 +52,7 @@ cd ..
 #---------------------------------------------------
 #latte-dock
 cd latte-dock
-sudo ./install.sh  
+sudo ./install.sh -y
 cd .. 
 ﻿plasmapkg2 --install org.kde.plasma.dittomenu.plasmoid
 plasmapkg2 --install applet-latte-separator-0.1.1.plasmoid
